@@ -1,17 +1,16 @@
 ﻿namespace OrderAPizza_api.Models
 {
-    public class OrderItem
+    public class CartItem
     {
         public int Id { get; set; }
 
-        public int OrdersId { get; set; }
+        public int CartsId { get; set; }
         public int ItemsId { get; set; }
 
         public int Quantity { get; set; }
-        public int UnitPrice { get; set; }
 
         // Navigation properties
-        public Order? Order { get; set; }
+        public Cart? Cart { get; set; }
         public Item? Item { get; set; }
     }
 }

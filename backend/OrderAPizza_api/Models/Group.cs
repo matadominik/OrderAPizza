@@ -4,7 +4,9 @@
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
+        public DateTime? DeletedAt { get; set; }
 
+        // Navigation properties
         public List<Item> Items { get; set; } = new();
     }
 }
